@@ -26,6 +26,7 @@ export const Default: StoryObj<typeof ButtonWithIcon> = {
     children: "Watch Now",
     Icon: ShoppingCartIcon,
   },
+  render: (args) => <ButtonWithIcon {...args} />,
 };
 
 export const WithCustomClass: StoryObj<typeof ButtonWithIcon> = {
