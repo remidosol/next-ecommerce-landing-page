@@ -1,7 +1,10 @@
+import React from "react";
+
 export type TestimonalCardData = {
   header: {
-    headerIconSrc: string;
-    headerIconAlt: string;
+    headerIconSrc?: string;
+    headerIconAlt?: string;
+    headerVisual?: React.ReactNode;
     headerText: string;
   };
   description: string;

@@ -1,6 +1,10 @@
-import FeaturesSection from "./features/page";
-import HeroSection from "./hero/page";
-import WhyJoinUsSection from "./why-join-us/page";
+import TestimonalsSection from "@/customer-testimonals/page";
+import FeaturesSection from "@/features/page";
+import HeroSection from "@/hero/page";
+import WhyJoinUsSection from "@/why-join-us/page";
+import CollectionSection from "@/expand-your-collection/page";
+import CommunitySection from "./global-community/page";
+import FooterSection from "./footer/page";
 
 export default function HomePage() {
   return (
@@ -8,6 +12,10 @@ export default function HomePage() {
       <HeroSection />
       <FeaturesSection />
       <WhyJoinUsSection />
+      <TestimonalsSection />
+      <CollectionSection />
+      <CommunitySection />
+      <FooterSection />
     </div>
   );
 }

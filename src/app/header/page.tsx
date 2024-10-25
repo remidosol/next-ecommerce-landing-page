@@ -1,9 +1,9 @@
 "use client";
 
 import { Bars3BottomLeftIcon } from "@heroicons/react/20/solid";
-import OutlinedButton from "../components/Buttons/OutlinedButton/OutlinedButton";
+import OutlinedButton from "@/components/Buttons/OutlinedButton/OutlinedButton";
 import styles from "./page.module.css";
-import useDimensions from "../hooks/useDimensions";
+import useDimensions from "@/hooks/useDimensions";
 
 export default function Header() {
   const { windowDimensions } = useDimensions();

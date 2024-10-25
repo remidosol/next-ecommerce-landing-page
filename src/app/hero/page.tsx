@@ -1,16 +1,16 @@
 "use client";
 
 import { PlayCircleIcon } from "@heroicons/react/20/solid";
-import ButtonWithIcon from "../components/Buttons/ButtonWithIcon/ButtonWithIcon";
-import OutlinedButton from "../components/Buttons/OutlinedButton/OutlinedButton";
-import Header from "../header/page";
+import ButtonWithIcon from "@/components/Buttons/ButtonWithIcon/ButtonWithIcon";
+import OutlinedButton from "@/components/Buttons/OutlinedButton/OutlinedButton";
+import Header from "@/header/page";
 import styles from "./page.module.css";
 import Image from "next/legacy/image";
-import snickerImage from "../../public/snicker-transparent.png";
+import snickerImage from "@/public/snicker-transparent.png";
 import HeroFooterItem from "./HeroFooterItem";
-import trophySvg from "../../public/trophy.svg";
-import tunnelSvg from "../../public/tunnel.svg";
-import tvSvg from "../../public/tv.svg";
+import trophySvg from "@/public/trophy.svg";
+import tunnelSvg from "@/public/tunnel.svg";
+import tvSvg from "@/public/tv.svg";
 
 export default function HeroSection() {
   return (
