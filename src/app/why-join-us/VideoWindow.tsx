@@ -7,9 +7,10 @@ type VideoWindow = {
   imageSrc: string;
   height: number;
   width: number;
+  playIcon?: boolean;
 };
 
-const VideoWindow: React.FC<VideoWindow> = ({ imageSrc, height, width }) => {
+const VideoWindow: React.FC<VideoWindow> = ({ imageSrc, height, width, playIcon }) => {
   return (
     <div className='flex box-border flex-col justify-center items-start rounded-[20px] isolate border-[5px] border-solid border-white bg-white shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25),0px_0px_15px_rgba(0,0,0,0.07)] z-10'>
       {/* Top Bar */}
@@ -20,9 +21,14 @@ const VideoWindow: React.FC<VideoWindow> = ({ imageSrc, height, width }) => {
       </div>
       {/* Video */}
       {/* <div className='flex justify-center items-center z-10'></div> */}
-      <div className='flex absolute justify-center items-center self-center w-36 h-36 rounded-full bg-[#121619BF] z-20'>
-        <PlayIcon color='#FFF' className='w-24 h-24 z-20' />
-      </div>
+      {playIcon !== undefined && playIcon === false ? (
+        <></>
+      ) : (
+        <div className='flex absolute justify-center items-center self-center w-36 h-36 rounded-full bg-[#121619BF] z-20'>
+          <PlayIcon color='#FFF' className='w-24 h-24 z-20' />
+        </div>
+      )}
+
       <Image className='rounded-b-[20px]' src={imageSrc} width={width} height={height} alt='Video Image' />
     </div>
   );
