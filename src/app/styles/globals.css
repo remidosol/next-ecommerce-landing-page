@@ -24,4 +24,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .clip_half_diagonal {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+  }
+  .clip_half_diagonal_rectangle {
+    clip-path: polygon(100% 0, 100% 0, 0 100%, 100% 100%);
+  }
+  .clip_square_diagonal {
+    clip-path: polygon(100% 50%, 100% 50%, 50% 100%, 0% 50%);
+  }
 }

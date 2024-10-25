@@ -1,0 +1,19 @@
+.container {
+  @apply flex flex-col justify-center py-12 px-4 md:p-20 bg-[#0F172A] border-t-[1px] border-b-[1px] border-[#E2E8F0] z-0;
+}
+
+.header {
+  @apply flex flex-col md:flex-row items-center gap-8 z-10;
+}
+
+.header_text {
+  @apply flex font-bold flex-grow text-[32px] md:font-extrabold md:text-[56px] text-white;
+}
+
+.product_list {
+  @apply flex flex-col flex-wrap items-center md:flex-row mx-4 my-8 md:m-20 gap-8 md:gap-12 z-10;
+}
+
+.sign_up_button {
+  @apply flex w-60 h-16 items-center justify-center border-white bg-transparent hover:bg-white hover:text-[#0F172A] text-white font-bold text-2xl;
+}

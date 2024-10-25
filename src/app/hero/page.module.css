@@ -1,0 +1,31 @@
+.middle_container {
+  @apply flex flex-col items-center justify-center py-12 px-4 gap-8 z-0 md:py-6 md:flex-row md:p-20 md:gap-20;
+}
+
+.middle_left_container {
+  @apply flex flex-col flex-wrap w-1/2 gap-8 z-10;
+}
+
+.middle_right_container {
+  @apply flex flex-row justify-center items-center gap-8 px-20 py-8 md:p-20 z-10;
+}
+
+.footer_container {
+  @apply flex justify-center items-center flex-col bg-[#FEF3C7] py-12 px-4 gap-8 md:p-20 md:flex-row md:gap-20 md:bg-transparent;
+}
+
+.sign_up_button {
+  @apply items-center justify-center border-[#78350F] text-[#78350F] hover:bg-[#78350F] hover:text-white self-center w-[179px] h-14;
+}
+
+.snicker_square {
+  @apply absolute w-[367px] h-[372px] rounded-xl mt-[51px] ml-[51px] bg-[#facc15];
+}
+
+.watch_demo_button {
+  @apply justify-center items-center py-3 px-2 text-[#78350F] hover:text-white hover:bg-[#78350F] rounded-lg;
+}
+
+.pink_circle_shape {
+  @apply absolute ml-8 w-12 h-12 rounded-full bg-[#A21CAF] opacity-50 z-0;
+}

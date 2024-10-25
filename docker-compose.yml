@@ -1,0 +1,25 @@
+services:
+  frontend:
+    container_name: frontend_landing_page
+    image: landing-page-frontend:1.0.0
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    command: npm run dev
+    ports:
+      - 3000:3000
+    networks:
+      - landing-page
+    volumes:
+      - ./:/app/
+      - frontend_node_modules:/app/node_modules
+    restart: unless-stopped
+
+networks:
+  landing-page:
+    driver: bridge
+
+volumes:
+  frontend_node_modules:
