@@ -14,6 +14,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
+  variants: {
+    extend: {
+      opacity: ["disabled"],
+    },
+  },
 };
 export default config;

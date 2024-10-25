@@ -1,0 +1,7 @@
+.product_card {
+  @apply flex box-border flex-col justify-center items-center md:items-start rounded-xl isolate bg-[#0F172A] border-spacing-[1px] border-solid border-[#0F172A] shadow-[0px_25px_50px_-12px_rgba(255,255,255,0.25),0px_0px_15px_rgba(255,255,255,0.07)];
+}
+
+.buy_now_button {
+  @apply flex w-80 h-14 justify-center mt-8 py-4 items-center self-center font-medium text-xl bg-transparent text-white hover:text-black hover:bg-white border-2 border-white rounded-lg;
+}

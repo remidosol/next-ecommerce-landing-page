@@ -1,0 +1,3 @@
+.testimonal_card {
+  @apply w-96 h-[430px] flex box-border flex-col justify-center items-center rounded-[20px] isolate bg-white border-spacing-[1px] border-solid border-[#E2E8F0] shadow-lg;
+}
